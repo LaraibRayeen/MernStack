@@ -1,0 +1,12 @@
+.head1{
+    text-decoration: underline;
+}
+.nave{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+
+}
+.navitem{
+    color: white;
+}

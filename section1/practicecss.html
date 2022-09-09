@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <style>
+        #sti{
+            position: sticky;
+            top: 20px;
+        }
+        .red{
+            background-color: rgb(157, 0, 255);
+            color: white;
+            font-size: 50px;
+          
+        }
+        #head{
+            background-color:blue;
+        }
+        .one{
+            color: white;
+            background:green
+        }
+        #nav{
+            background-color: blue;
+        }
+       
+        .myclass{
+            color: red;
+        }
+        .image{
+            background-image: url("code.jpg");
+            border: 3px solid red;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .im{
+            height: 700px;
+            width: 300px;
+            /* background-image:url("code.jpg");
+            color:red;
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+            background : blue url(code.jpg) no-repeat fixed ; 
+
+
+        }
+        header{
+            height: 50px;
+            width:900px;
+            background-color: burlywood;
+            color: white;
+        }
+        section{
+         height:400px ;
+         width: 300px;
+         background-color: rgb(46, 41, 34);
+         color: white;
+         font-size:17px;
+         padding: 6px;
+         margin-top: 4px;
+
+        }
+        footer
+        {
+            height: 70px;
+            width: 300px;
+            background-color: rgb(209, 124, 4);
+            color:#fff9f9;
+        }
+        .outer{
+            background-color: rgb(5, 5, 5);
+            height: 100px;
+            width: 500px;
+            color: beige; 
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .left{
+            background-color: rgb(210, 0, 0);
+            height: 100px;
+            width: 250px;
+            display: inline-block;
+            text-decoration:wavy;
+            /* display: none; */
+
+        }
+        .right{
+            background-color: rgb(0, 214, 89);
+            height: 100px;
+            width: 250px;
+            display: inline-block;
+            /* visibility: hidden; */
+            
+
+        }
+        .rel{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+            height: 100px;
+            font-size: 30px;
+          
+          
+        }
+
+        li{
+            font-size: 2rem;
+            }
+            .choice{
+                background-color: rgb(68, 22, 22);
+                height: 50px;
+                width: 300px;
+                color: #fff9f9;
+            }
+            .code{
+                float: left;
+                height: 50px;
+                width: 100px;
+                background-color: rgb(192, 145, 17);
+            }
+            .eat{
+                float: left;
+                width: 100px;
+                height: 50px;
+                background-color: rgb(92, 31, 31);
+            }
+            .repeate{
+                float: left;
+                height: 50px;
+                width: 100px;
+                background-color: rgb(38, 232, 113);
+            }
+            .can{
+                display: flex;
+                
+                height: 50px;
+                width:300px;
+            }
+            .cod{
+                height: 50px;
+                width: 100px;
+                background-color: rgb(192, 145, 17)
+            }
+            .ea{
+                height: 50px;
+                width: 100px;
+                background-color: rgb(92, 31, 31);
+            }
+             .repeat{
+                height: 50px;
+                width: 100px;
+                background-color: rgb(38, 232, 113);
+
+             }
+             .out{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 400px;
+                width: 800px;
+                background-color: rgb(175, 54, 54);  
+
+            }
+
+            .hac{
+                height: 100px;
+                width: 800px;
+                background-color: rgb(17, 7, 7);
+                color: white;
+                 }
+                 .div1{
+                    background-color: rgb(177, 31, 146);
+                    height: 200px;
+                    width: 200px;
+                 }
+                 .div2{
+                    background-color: rgb(71, 39, 65);
+                    height: 200px;
+                    width: 200px;
+                 }
+                 .header{
+                    background-color: rgb(161, 18, 18);
+                    height: 100px;
+                    width: 300px;
+                   
+                    display: grid;
+                    grid-template-columns: auto  auto auto;
+                }
+                @media screen and ( max-width: 1200px){
+                    .item{
+
+                    background-color:  rgb(238, 238, 14) ;}
+
+                }
+                @media screen and ( max-width: 1000px){
+                    .item{
+
+                    background-color:  rgb(24, 8, 4) ;}
+                    
+                }
+              
+ 
+
+
+                 .item{
+                    height:50px;
+                    width: 50px;
+                    color: rgb(206, 199, 199);
+                    
+                 }
+                 .progress{  
+                    height: 10px;
+                    width: 400px;
+                    background-color: rgb(16, 49, 51);
+                    animation: bar 1s ease-in-out infinite ;
+                    transform: rotate(90deg);
+                 }
+                 @keyframes bar {
+                    from{
+                        width: 10px;
+                    }
+                    to{
+                         width: 380px;
+                    }
+                 }
+          
+
+    </style>
+</head>
+<body>
+    <div class="red myclass" id="sti">
+    hello css
+    </div>
+    <p id="head" class="myclass"> this is paragraph</p>
+    <h1 class="one myclass">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </h1>
+    <h2 class="one myclass">Lorem ipsum dolor sit amet consectetur.</h2>
+    <h3 class="one red myclass">Lorem, ipsum dolor.</h3>
+    <nav id="nav" >
+       <h1 class="myhead myclass" >about</h1> 
+       <h1 class="myhead myclass">home
+       </h1>
+    </nav>
+     <div class="image">
+        
+     </div><br><br>
+     <div class="im">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat est ullam, ex blanditiis animi hic ea odit alias natus pariatur itaque dicta voluptates, rerum, et saepe voluptate. Neque, voluptas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis nisi consequatur velit labore repudiandae molestias illo suscipit ratione quam, magni porro voluptates repellat omnis obcaecati modi adipisci rerum natus, nam in. Facilis, illo et. Deserunt voluptatem fugit placeat aspernatur pariatur. Ducimus doloribus commodi, molestiae illum saepe ad cupiditate, architecto atque voluptates rerum odit voluptate. Perferendis magni, eum, temporibus quae aspernatur neque cum vel quo porro voluptatum ipsum! Temporibus 
+     </div>
+<header>
+    
+    <li>
+        about
+    </li>
+    <li>
+        contect
+    </li>
+</header>
+<section> 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit placeat aperiam expedita, porro necessitatibus fugiat blanditiis officiis, quasi, optio nesciunt reiciendis aliquam nobis non. Inventore dolorem pariatur optio neque sequi ab, accusantium nam quis, non blanditiis voluptatem rem dignissimos voluptates, veniam assumenda aspernatur est ut fuga hic dolores cumque iste architecto vitae quos? Porro placeat mollitia fugiat quos reiciendis odio tempora, incidunt iste ea, praesentium iure fugit modi voluptatem corrupti omnis dolore consequuntur enim inventore voluptate et in 
+</section>
+<footer>
+
+    help <br> 
+    copyright <br>
+    @ 
+</footer>
+<div class="outer"> Lorem ipsum dolor sit amet.</div>
+<div class="left"></div><div class="right"></div>
+<div class="rel">
+    <ul style="list-style-type:circle;" >
+        <li>about</li>
+        
+        <li> content </li>
+    </ul>
+</div>
+</div>
+<div class="choice">
+    <div class="code">code</div>
+    <div class="eat">eat</div>
+    <div class="repeate">repeate</div>
+</div>
+<div class="can">
+    <div class="cod">code</div>
+    <div class="ea">eat</div>
+    <div class="repeat">repeate</div>
+
+</div>
+<div class="hac" style="font-size:50px">
+    about  home contect</div>
+    
+  <div class="out">
+  <div class="div1"></div>
+  <div class="div2"></div>
+  </div>
+   <div class="header">
+    <div class="item"> home</div>
+    <div class="item">about</div>
+    <div class="item"> contact</div>
+   </div>
+   <div class="progress">
+    
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Student Admission Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <style>
+        *{
+           font-family: roboto; 
+        }
+        body{
+            margin:  0px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .mycart{
+            border: 3px solid  rgb(30, 8, 8);
+            width: 500px;
+            padding: 30px;
+            /* margin: auto; */
+            box-shadow: 5px 5px 5px 1px black;
+        }
+        .myinput{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            border-bottom: 2px solid  aqua  ;
+            box-shadow: -1px -1px 2px 0 black;
+            outline: none;
+            
+
+        }
+        .mybtn
+        {
+            padding: 10px 20px;
+            background: rgb(6, 139, 228);
+            font-size: 1.1em;
+            color: white;
+            font-weight: bold;
+            border:none;
+            width: 48%; 
+             /* x-offset y-offset blur size color */
+            box-shadow: 5px 5px 5px 3px rgb(116, 131, 160);
+            text-shadow: 1px 2px 2px black;
+            border-radius: 5px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <h1 id="myid">Student Admission Form</h1> -->
+    <div class="mycart">
+    <form>
+      <h1> Student Admission form</h1>
+        student  name:
+        <input class="myinput" type="text" placeholder="full name"><br><br>
+        fahers name:
+        <input class="myinput" type="text"><br><br>
+         date of birth :
+         <input class="myinput" type="date" ><br><br>
+         contact:
+         <input class="myinput" type="number"><br><br>
+         high school name:
+         <input class="myinput" type="text"><br><br>
+         gender:
+         <input type="radio" name="age"> male 
+         <input type="radio" name="age"> female <br><br>
+         course:
+         <input type="radio" name="course"> BCA 
+         <input type="radio" name="course"> B.tech     
+         <input type="radio" name="course"> b.pharm <br><br>
+         membership
+          <select >
+            <option > normal</option>
+            <option >premium</option>
+          </select><br> <br>
+            <label>city </label>
+            <input list="city">
+          <datalist id="city">
+            <option >amethi</option>
+            <option >allahbad</option>
+            <option > lucknow</option>
+           </datalist><br><br>
+           
+           <div style="display: flex;justify-content: space-between;">
+         <button class="mybtn"> Submit</button>
+         <button class="mybtn"> Submit</button>
+         
+         </div>
+    </form>
+   </div> 
+ </body>
+</html>

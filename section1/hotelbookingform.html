@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking form</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+   <style>
+        *{
+            font-family: 'Ibarra Real Nova', serif;
+
+        }
+        .myinput{
+            width: 200px;
+            box-sizing: border-box;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.236);
+            
+        }
+        body
+        {
+            background: linear-gradient(67deg, #ef830871,#ffffff72),url("https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2149017896.jpg?w=2000"); 
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            margin: 0;
+            display: flex; 
+            justify-content: center; 
+             align-items: center; 
+            min-height: 100vh; 
+            background-repeat:repeat;
+            font-weight: bold;
+            /* background: linear-gradient(67deg, #ef8408,white, green) ; */
+
+            }
+        .mycard{
+            border: 2px solid rgb(59, 44, 44); 
+            border-radius: 5px;
+            width : 30%;
+            padding: 30px;
+             background-color:white;
+             
+
+        }
+        .mybtn{
+            padding: 10px 20px; 
+            background:#3b592f; 
+             color: white; 
+            font-size: 1.1em;
+            font-weight: bold; 
+            border: none; 
+            width: 100%; 
+            /* x-offset y-offset blur size color */
+            box-shadow: 5px 5px 5px 1px #00000038,-2px -2px 5px 1px #00000038; 
+            text-shadow: 1px 2px 2px #1c1a1a38 ;
+        }
+        label{
+            width:50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mycard">
+    <h1 style="color:#b82851;font-size: 41px;">Hotel Booking Form</h1>
+    <form >
+        <label>Name*</label>
+        <input class="myinput" placeholder="Enter your Name " type="text" required><br><br>
+        
+        <label >Addresss</label>
+        <input class="myinput"placeholder="Enter Your full Address" type="text"><br><br>
+       
+        <label>Age</label>
+        <input class="myinput"type="number" placeholder="18+" ><br><br>
+        <label>Pincode</label>
+        <input class="myinput"placeholder="Enter Pin code  " type="number"><br><br>
+       
+     
+        <label>Phone No.*</label>
+        <input class="myinput"placeholder="+91 " type="number" required><br><br>
+        
+        <label> No. of guests</label>
+        <select >
+            <option >1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+            </select><br><br>
+        <label>Check-in date & time</label>
+        <input class="myinput" type="datetime-local"><br><br>
+       
+        <label>Check-out date & time</label>
+        <input class="myinput"  type="datetime-local"><br><br>
+       
+        <label > Room Preference-</label>
+        <input style= "width: 30px" type="radio" name="room">Deluxe  <input type="radio" name="room"> Standard <input type="radio" name="room"> Normal <br><br>
+        
+        <button type="submit" class ="mybtn">Booking Confirm</button> <br><br>
+        <button  type="reset"  class ="mybtn">Reset</button> <br><br>
+
+        </form>
+ </div>       
+</body>
+</html>

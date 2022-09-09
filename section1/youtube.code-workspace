@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "E:\\youtube"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "youtube"
+	}
+}
